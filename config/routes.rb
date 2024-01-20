@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   resources :friends
   get 'home/index'
-  root 'home#index'
+  # root 'home#index'
+  root 'friends#index'
   get 'home/about'
   devise_for :users
   devise_scope :user do
