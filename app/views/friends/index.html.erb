@@ -8,7 +8,10 @@
     <th>Email</th>
     <th>Phone</th>
     <th>Twitter</th>
+    <th>User ID</th>
     <th>Actions</th>
+    <th>Actions</th>
+
   </tr>
   </thead>
   <tbody>
@@ -18,10 +21,13 @@
       <td> <%= friend.last_name %> </td>
       <td> <%= friend.email %> </td>
       <td> <%= friend.phone %> </td>
-      <td>  <%= friend.twitter %> </td>
+      <td> <%= friend.twitter %> </td>
+      <td> <%= friend.user_id %> </td>
       <td>
         <%= link_to "Show this friend", friend %>
-<!--        Will add edit here later -->
+      </td>
+      <td>
+        <%= link_to "Edit", edit_friend_path(friend) %>
       </td>
     </tr>
   <% end %>
